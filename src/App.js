@@ -40,9 +40,9 @@ function App() {
     setRows(tempRows);
   };
 
-  const total =
+  const result =
     rows.length === 0
-      ? ""
+      ? null
       : rows.reduce((acc, cur) => {
           if (!cur.value || cur.disabled) return acc;
           if (cur.sign === "-") {
@@ -69,8 +69,7 @@ function App() {
         ))
         }
       </ul>
-
-      <p> {total}</p>
+     { result!=null && <p> Result: {result}</p>}
     </div>
   );
 }
