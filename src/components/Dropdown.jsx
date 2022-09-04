@@ -15,12 +15,13 @@ export const Dropdown = ({
       name="drop-down"
       id="drop-down"
     >
-      {options.map((e) => (
+      {
+      options.map((e) => (
         <option key={e.value} value={e.value}>
-          {" "}
-          {e.label}{" "}
+          {e.label}
         </option>
-      ))}
+      ))
+      }
     </select>
   );
 };
