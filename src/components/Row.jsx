@@ -52,10 +52,7 @@ CustomRow.propTypes = {
   onInputChange: PropTypes.func,
   row: PropTypes.shape({
     disabled: PropTypes.bool,
-    value: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number
-    ]),
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     sign: PropTypes.string,
     id: PropTypes.string,
   }),

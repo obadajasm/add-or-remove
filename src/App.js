@@ -56,7 +56,8 @@ function App() {
       <Button title="Add Row" onClick={handleAddRow} />
 
       <ul>
-        {rows.map((e) => (
+        {
+        rows.map((e) => (
           <CustomRow
             key={e.id}
             row={e}
@@ -65,7 +66,8 @@ function App() {
             onDelete={handleDelete}
             onDisable={handleDisable}
           />
-        ))}
+        ))
+        }
       </ul>
 
       <p> {total}</p>
